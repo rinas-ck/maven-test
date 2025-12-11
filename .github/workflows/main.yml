@@ -1,0 +1,22 @@
+name: maven-file
+
+on:
+  push:
+    branches: 
+      - main
+  workflow_dispatch:
+
+jobs:
+
+  my-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: starting package
+        run: mvn -B package
+
+      - name: llist all target files
+        run: ls -lh target/
+      
+
+      
