@@ -21,6 +21,9 @@ jobs:
 
       - name: llist all target files
         run: ls -lh target/
+
+      - name: test file
+        run: mvn test
       
 
       
